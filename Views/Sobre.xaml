@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre o App"
+             BackgroundColor="{StaticResource White}">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center">
+
+        <Label
+            Text="🏨 Maui Hotel &amp; Resorts"
+            FontSize="32"
+            FontAttributes="Bold"
+            TextColor="{StaticResource Primary}"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Aplicativo de gerenciamento de reservas e cálculo de diárias."
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            Margin="0, 0, 0, 20"/>
+
+        <BoxView HeightRequest="1" Color="{StaticResource Gray400}" HorizontalOptions="Fill" />
+
+        <Label
+            Text="Desenvolvido por:"
+            FontSize="14"
+            TextColor="{StaticResource Gray900}"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Carlos Rogério Roque"
+            FontSize="20"
+            FontAttributes="Bold"
+            TextColor="{StaticResource Secondary}" HorizontalOptions="Center" />
+
+        <Label
+            Text="Ano de Desenvolvimento: 2025"
+            FontSize="15"
+            FontAttributes="Italic"
+            TextColor="{StaticResource Gray900}"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

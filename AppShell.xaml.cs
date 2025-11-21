@@ -1,4 +1,5 @@
-﻿namespace MauiAppHotel
+﻿// AppShell.xaml.cs
+namespace MauiAppHotel
 {
     public partial class AppShell : Shell
     {
@@ -6,11 +7,12 @@
         {
             InitializeComponent();
 
-            // REGISTRO DE ROTAS: Registre as rotas das páginas que não são a página inicial
-            // Isso permite que você navegue para elas usando Shell.Current.GoToAsync("rota")
-
-            // Certifique-se de que a namespace "Views" existe ou ajuste conforme necessário.
+            // Rotas já existentes
             Routing.RegisterRoute("ContratacaoRoute", typeof(Views.ContratacaoHospedagem));
+            Routing.RegisterRoute("HospedagemContratadaRoute", typeof(Views.HospedagemContratada));
+
+            // NOVO: Registro da rota para a página Sobre
+            Routing.RegisterRoute("SobreRoute", typeof(Views.Sobre));
         }
     }
 }

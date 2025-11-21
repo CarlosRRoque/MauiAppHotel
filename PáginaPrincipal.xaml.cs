@@ -18,7 +18,14 @@ namespace MauiAppHotel
             // É essencial usar 'async' e 'await' para navegação assíncrona.
             await Shell.Current.GoToAsync("ContratacaoRoute");
         }
-
+        
+        /// NOVO: Método de navegação para a tela Sobre.
+                private async void OnSobreClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("SobreRoute");
+        }
+        
         // NOTA: Toda a lógica do contador ('count', 'OnCounterClicked', referências a 'CounterBtn') foi removida.
+
     }
 }
